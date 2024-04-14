@@ -13,9 +13,8 @@ class Solution(object):
         :rtype: None Do not return anything, modify matrix in-place instead.
         """
         matrix_len = len(matrix)
-        row_len = len(matrix[0])
 
-        matrix = matrix[:::-1]
+        matrix = matrix[::-1]
 
         for _ in range(matrix_len) :
             for __ in range(_, matrix_len) :
